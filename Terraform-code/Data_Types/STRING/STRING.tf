@@ -2,8 +2,12 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-variable "Username" {}
+
+variable "username" {
+  type    = string
+  
+}
 
 resource "aws_iam_user" "user" {
-  name = var.Username
+  name = var.username
 }
