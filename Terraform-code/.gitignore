@@ -28,3 +28,8 @@ terraform.rc
 *.tar.gz
 *.bak
 **/terraform-provider-*
+
+# SSH / accidental command files
+eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)".pub
+
